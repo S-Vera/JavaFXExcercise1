@@ -19,7 +19,7 @@ public class Main {
         if (args.length == 1) exercise = Integer.parseInt(args[0]);
         switch(exercise) {
             case 1:  MainApp1.launch(MainApp1.class, args); break;
-            case 2:
+            case 2: MainApp2.launch(MainApp2.class, args); break;
             case 3:
             default: MainApp.launch(MainApp.class, args); break;
         }
