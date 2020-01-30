@@ -1,4 +1,4 @@
-package fi.utu.tech.gui.javafx;
+package fi.utu.tech.gui.javafx.teht1;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,12 +13,16 @@ public class ResourceLoader<N extends Parent, C> {
         try {
             // determines where to look for the resources (the root path)
             Class resourceRootClass = getClass();
+            
             FXMLLoader loader = new FXMLLoader(resourceRootClass.getResource(contentPath));
-            System.out.println(resourceRootClass.getResource(contentPath));
+            //System.out.println(resourceRootClass.getResource(contentPath));
+            
             root_ = loader.load();
             controller_ = loader.getController();
             System.out.println("DEBUG: " + contentPath + " loaded.");
+            
         } catch (Exception e) {
+        	
             Dialogs.warning(
                     "Internal error",
                     "Could not open FXML file: " + contentPath,
@@ -26,7 +30,9 @@ public class ResourceLoader<N extends Parent, C> {
             );
             System.exit(1);
         }
+        
         root = root_;
+        
         controller = controller_;
     }
 

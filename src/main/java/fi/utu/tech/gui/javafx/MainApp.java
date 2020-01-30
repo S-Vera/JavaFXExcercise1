@@ -42,7 +42,6 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
         System.out.println("Stage C");
         ResourceLoader<Parent, FXMLController> loader = new ResourceLoader<>("scene.fxml");
-
         loader.controller.setLabel("Welcome!");
 
         // configure the menu to create windows with createWindow

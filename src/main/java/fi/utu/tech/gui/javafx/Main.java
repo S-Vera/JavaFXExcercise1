@@ -1,5 +1,7 @@
 package fi.utu.tech.gui.javafx;
 
+import fi.utu.tech.gui.javafx.teht1.MainApp1;
+
 public class Main {
     /**
      * The main() method is ignored in correctly deployed JavaFX application.
@@ -16,7 +18,7 @@ public class Main {
         int exercise = 1;
         if (args.length == 1) exercise = Integer.parseInt(args[0]);
         switch(exercise) {
-            case 1:
+            case 1:  MainApp1.launch(MainApp1.class, args); break;
             case 2:
             case 3:
             default: MainApp.launch(MainApp.class, args); break;
