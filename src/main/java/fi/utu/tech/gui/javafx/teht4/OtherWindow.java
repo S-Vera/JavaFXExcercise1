@@ -1,12 +1,15 @@
-package fi.utu.tech.gui.javafx.teht3;
+package fi.utu.tech.gui.javafx.teht4;
 
 import javafx.scene.control.TextField;
 
 import javafx.scene.layout.VBox;
 import fi.utu.tech.gui.javafx.*;
+import javafx.css.PseudoClass;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
@@ -18,11 +21,15 @@ import javafx.scene.text.Text;
 
 public class OtherWindow extends BorderPane {
     public OtherWindow() {
+    	
+    	
         Circle c = new Circle(200, Color.NAVY);
+        
         setCenter(c);
         setLeft(new ImageView(ResourceLoader.image("hmm.png")));
         
         Label label = new Label("Terve");
+        
 
         setTop(label);
         setAlignment(label, Pos.TOP_CENTER);
@@ -31,6 +38,7 @@ public class OtherWindow extends BorderPane {
         StackPane stack = new StackPane();
         stack.getChildren().addAll(c, text);
         setCenter(stack);
+
         
         TextField textfield1 = new TextField();
         TextField textfield2 = new TextField();
@@ -49,9 +57,16 @@ public class OtherWindow extends BorderPane {
         ColumnConstraints column3 = new ColumnConstraints();
         column3.setPercentWidth(50);
         grid.getColumnConstraints().addAll(column1, column2, column3);
-        grid.setPrefWidth(c.getRadius());
+        grid.setPrefWidth(200);
         VBox vbox = new VBox(stack, grid);
         setCenter(vbox);
+        
+        vbox.getStyleClass().add("muokattava");
+        grid.getStyleClass().add("muokattava");
+        stack.getStyleClass().add("muokattava");
+        label.getStyleClass().add("muokattava");
+        getStyleClass().add("muokattava");
+        setId(new String("muokkaus"));
         
         
     }

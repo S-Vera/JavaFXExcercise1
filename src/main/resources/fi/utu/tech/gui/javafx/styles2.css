@@ -1,0 +1,14 @@
+.button {
+    -fx-font-weight: bold;
+}
+
+.muokattava {
+	-fx-background-color: black;
+	-fx-text-fill: white;
+}
+
+.root {
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	
+	}
