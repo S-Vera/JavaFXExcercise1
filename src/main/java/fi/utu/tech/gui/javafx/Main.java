@@ -1,6 +1,6 @@
 package fi.utu.tech.gui.javafx;
 
-import fi.utu.tech.gui.javafx.teht1.MainApp1;
+
 
 public class Main {
     /**

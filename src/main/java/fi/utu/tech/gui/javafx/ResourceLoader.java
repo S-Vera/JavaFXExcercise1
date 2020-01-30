@@ -14,7 +14,6 @@ public class ResourceLoader<N extends Parent, C> {
             // determines where to look for the resources (the root path)
             Class resourceRootClass = getClass();
             FXMLLoader loader = new FXMLLoader(resourceRootClass.getResource(contentPath));
-            System.out.println(resourceRootClass.getResource(contentPath));
             root_ = loader.load();
             controller_ = loader.getController();
             System.out.println("DEBUG: " + contentPath + " loaded.");
