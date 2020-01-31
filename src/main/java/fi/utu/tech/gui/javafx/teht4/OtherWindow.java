@@ -58,6 +58,7 @@ public class OtherWindow extends BorderPane {
         column3.setPercentWidth(50);
         grid.getColumnConstraints().addAll(column1, column2, column3);
         grid.setPrefWidth(200);
+        
         VBox vbox = new VBox(stack, grid);
         setCenter(vbox);
         

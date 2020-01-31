@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/13.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.utu.tech.gui.javafx.FXMLController">
+   <top>
+      <Label text="Terve" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefWidth="200.0">
+               <children>
+                  <Circle fill="#0c2772" radius="200.0" stroke="BLACK" strokeType="INSIDE" />
+                  <TextArea blendMode="MULTIPLY" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="64.0" scaleShape="false" text="Maailma" />
+               </children>
+            </StackPane>
+            <GridPane alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="418.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="50.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField prefHeight="0.0" prefWidth="200.0" />
+                  <TextField GridPane.columnIndex="1" />
+                  <TextField GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <ImageView fitHeight="453.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@hmm.png" />
+         </image>
+      </ImageView>
+   </left>
+</BorderPane>
