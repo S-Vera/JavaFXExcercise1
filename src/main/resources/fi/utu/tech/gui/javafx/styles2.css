@@ -2,13 +2,14 @@
     -fx-font-weight: bold;
 }
 
-.muokattava {
-	-fx-background-color: black;
-	-fx-text-fill: white;
-}
-
-.root {
-	-fx-background-color: black;
-	-fx-text-fill: white;
-	
+.5{
+	-fx-background-color: green;
 	}
+
+
+.text-field{
+	-fx-text-fill: white;
+	}
+	
+
+

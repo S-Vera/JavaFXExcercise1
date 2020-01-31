@@ -22,6 +22,7 @@ public class Main {
             case 2: MainApp2.launch(MainApp2.class, args); break;
             case 3: MainApp3.launch(MainApp3.class, args); break;
             case 4: MainApp4.launch(MainApp4.class, args); break;
+            case 5: MainApp5.launch(MainApp5.class, args); break;
             default: MainApp.launch(MainApp.class, args); break;
         }
     }

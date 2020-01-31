@@ -61,12 +61,12 @@ public class OtherWindow extends BorderPane {
         VBox vbox = new VBox(stack, grid);
         setCenter(vbox);
         
-        vbox.getStyleClass().add("muokattava");
-        grid.getStyleClass().add("muokattava");
-        stack.getStyleClass().add("muokattava");
-        label.getStyleClass().add("muokattava");
-        getStyleClass().add("muokattava");
-        setId(new String("muokkaus"));
+        vbox.getStyleClass().add("1");
+        grid.getStyleClass().add("2");
+        stack.getStyleClass().add("3");
+        label.getStyleClass().add("4");
+        getStyleClass().add("5");
+        setId("muokkaus");
         
         
     }
