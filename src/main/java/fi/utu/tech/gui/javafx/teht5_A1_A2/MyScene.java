@@ -1,4 +1,4 @@
-package fi.utu.tech.gui.javafx.teht5;
+package fi.utu.tech.gui.javafx.teht5_A1_A2;
 
 
 import fi.utu.tech.gui.javafx.*;

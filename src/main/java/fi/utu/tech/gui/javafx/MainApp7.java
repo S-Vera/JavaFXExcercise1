@@ -1,6 +1,6 @@
 package fi.utu.tech.gui.javafx;
 
-import fi.utu.tech.gui.javafx.teht5.MyScene;
+import fi.utu.tech.gui.javafx.teht5_A1_A2.MyScene;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
