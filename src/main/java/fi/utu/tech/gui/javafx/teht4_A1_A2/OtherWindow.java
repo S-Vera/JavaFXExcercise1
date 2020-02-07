@@ -1,4 +1,4 @@
-package fi.utu.tech.gui.javafx.teht4;
+package fi.utu.tech.gui.javafx.teht4_A1_A2;
 
 import javafx.scene.control.TextField;
 

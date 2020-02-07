@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 public class MainApp4 extends MainApp{
 
     protected Parent createWindow() {
-        return new fi.utu.tech.gui.javafx.teht4.OtherWindow();
+        return new fi.utu.tech.gui.javafx.teht4_A1_A2.Selain();
     }
     
     protected String createStyle() {
