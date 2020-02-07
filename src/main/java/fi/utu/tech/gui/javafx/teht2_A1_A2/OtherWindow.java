@@ -1,4 +1,4 @@
-package fi.utu.tech.gui.javafx.teht2;
+package fi.utu.tech.gui.javafx.teht2_A1_A2;
 
 import fi.utu.tech.gui.javafx.*;
 import javafx.geometry.Pos;
